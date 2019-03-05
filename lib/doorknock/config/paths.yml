@@ -1,0 +1,17 @@
+---
+- admin.php
+- admin/
+- admin/index.php
+- admin/login.php
+- administrator/
+- administrator/index.php
+- administrator/login.php
+- adminlogin.php
+- adminpanel.php
+- control.php
+- controller.php
+- panel.php
+- panel/
+- panel/admin.php
+- panel/index.php
+- panel/login.php
