@@ -1,0 +1,364 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://urlscan.io/api/v1/search/?q=PhishTank%20OR%20OpenPhish%20OR%20CertStream-Suspicious&size=10
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - urlscan.io
+      User-Agent:
+      - http.rb/4.0.5
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 05 Mar 2019 22:49:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '9899'
+      Connection:
+      - close
+      Cache-Control:
+      - public, max-age=10
+      Etag:
+      - W/"26ab-wdRoAkuLwDBNYA5TEvQyGpqPmP8"
+      X-Proxy-Cache:
+      - STALE
+      Content-Security-Policy:
+      - 'default-src ''self'' data: www.google-analytics.com ; script-src ''self''
+        data: www.google-analytics.com maps.googleapis.com developers.google.com www.google.com
+        www.gstatic.com; style-src ''self'' ''unsafe-inline'' fonts.googleapis.com
+        www.google.com; img-src *; font-src ''self'' fonts.gstatic.com; child-src
+        ''self''; frame-src https://www.google.com/recaptcha/; form-action ''self'';
+        upgrade-insecure-requests; report-uri https://492e9283a087a343fe461d889f3a068e.report-uri.io/r/default/csp/enforce'
+      Referrer-Policy:
+      - unsafe-url
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "results": [
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:53.241Z",
+                "source": "certstream-suspicious",
+                "url": "https://credits101.net"
+              },
+              "stats": {
+                "uniqIPs": 11,
+                "consoleMsgs": 3,
+                "dataLength": 953615,
+                "encodedDataLength": 363107,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.credits101.net",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.credits101.net/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "f257739b-fae0-4331-a223-fb71e90347c5",
+              "result": "https://urlscan.io/api/v1/result/f257739b-fae0-4331-a223-fb71e90347c5"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:46.202Z",
+                "source": "certstream-suspicious",
+                "url": "https://creditscored.com"
+              },
+              "stats": {
+                "uniqIPs": 10,
+                "consoleMsgs": 3,
+                "dataLength": 954304,
+                "encodedDataLength": 363332,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.creditscored.com",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.creditscored.com/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "9d947e7e-6026-4433-893d-3d6f66c7d194",
+              "result": "https://urlscan.io/api/v1/result/9d947e7e-6026-4433-893d-3d6f66c7d194"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:45.992Z",
+                "source": "certstream-suspicious",
+                "url": "https://creditrepairers.net"
+              },
+              "stats": {
+                "uniqIPs": 10,
+                "consoleMsgs": 3,
+                "dataLength": 953732,
+                "encodedDataLength": 363125,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.creditrepairers.net",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.creditrepairers.net/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "625786c7-9f44-45d8-8975-6b78383eeb9c",
+              "result": "https://urlscan.io/api/v1/result/625786c7-9f44-45d8-8975-6b78383eeb9c"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:37.600Z",
+                "source": "certstream-suspicious",
+                "url": "https://credits101.com"
+              },
+              "stats": {
+                "uniqIPs": 11,
+                "consoleMsgs": 3,
+                "dataLength": 953596,
+                "encodedDataLength": 363110,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.credits101.com",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.credits101.com/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "81c57002-a8eb-4e88-b23d-6cb2742cc556",
+              "result": "https://urlscan.io/api/v1/result/81c57002-a8eb-4e88-b23d-6cb2742cc556"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:28.573Z",
+                "source": "certstream-suspicious",
+                "url": "https://creditrepairshop.net"
+              },
+              "stats": {
+                "uniqIPs": 11,
+                "consoleMsgs": 3,
+                "dataLength": 953745,
+                "encodedDataLength": 363179,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.creditrepairshop.net",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.creditrepairshop.net/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "1acd25b7-2b42-49e0-8648-0009bd139b18",
+              "result": "https://urlscan.io/api/v1/result/1acd25b7-2b42-49e0-8648-0009bd139b18"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:21.286Z",
+                "source": "certstream-suspicious",
+                "url": "https://credition.net"
+              },
+              "stats": {
+                "uniqIPs": 11,
+                "consoleMsgs": 3,
+                "dataLength": 953574,
+                "encodedDataLength": 363124,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.credition.net",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.credition.net/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "875014e1-bfd6-4ba4-88c2-cd6db45b53c4",
+              "result": "https://urlscan.io/api/v1/result/875014e1-bfd6-4ba4-88c2-cd6db45b53c4"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:10.501Z",
+                "source": "certstream-suspicious",
+                "url": "https://creditcollectors.net"
+              },
+              "stats": {
+                "uniqIPs": 10,
+                "consoleMsgs": 3,
+                "dataLength": 953760,
+                "encodedDataLength": 363168,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.creditcollectors.net",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.creditcollectors.net/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "611f5ae7-5cdb-4e54-ac9b-f682e6108c87",
+              "result": "https://urlscan.io/api/v1/result/611f5ae7-5cdb-4e54-ac9b-f682e6108c87"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:05.894Z",
+                "source": "certstream-suspicious",
+                "url": "https://creditindex.net"
+              },
+              "stats": {
+                "uniqIPs": 10,
+                "consoleMsgs": 3,
+                "dataLength": 954293,
+                "encodedDataLength": 363479,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.creditindex.net",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.creditindex.net/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "718391e0-c6a0-4914-be0c-18db7e3c5eaa",
+              "result": "https://urlscan.io/api/v1/result/718391e0-c6a0-4914-be0c-18db7e3c5eaa"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:43:05.301Z",
+                "source": "certstream-suspicious",
+                "url": "https://creditcollection.net"
+              },
+              "stats": {
+                "uniqIPs": 11,
+                "consoleMsgs": 3,
+                "dataLength": 954392,
+                "encodedDataLength": 364257,
+                "requests": 24
+              },
+              "page": {
+                "country": "US",
+                "server": "Microsoft-IIS/7.5",
+                "city": "Scottsdale",
+                "domain": "www6.creditcollection.net",
+                "ip": "184.168.221.104",
+                "asnname": "AS-26496-GO-DADDY-COM-LLC - GoDaddy.com, LLC, US",
+                "asn": "AS26496",
+                "url": "http://www6.creditcollection.net/?&searchbox=1&showDomain=1&tdfs=1",
+                "ptr": "ip-184-168-221-104.ip.secureserver.net"
+              },
+              "uniq_countries": 2,
+              "_id": "e28e7873-9e33-4580-81a1-c504790e5645",
+              "result": "https://urlscan.io/api/v1/result/e28e7873-9e33-4580-81a1-c504790e5645"
+            },
+            {
+              "task": {
+                "visibility": "public",
+                "method": "automatic",
+                "time": "2019-03-05T22:42:49.658Z",
+                "source": "certstream-suspicious",
+                "url": "https://pc13.google1.xvideos.net"
+              },
+              "stats": {
+                "uniqIPs": 1,
+                "consoleMsgs": 0,
+                "dataLength": 14,
+                "encodedDataLength": 136,
+                "requests": 1
+              },
+              "page": {
+                "country": "NL",
+                "server": "Caddy\nnginx",
+                "city": "Amsterdam",
+                "domain": "pc13.google1.xvideos.net",
+                "ip": "141.0.173.175",
+                "asnname": "SERVERSTACK-ASN - ServerStack, Inc., US",
+                "asn": "AS46652",
+                "url": "https://pc13.google1.xvideos.net/",
+                "ptr": ""
+              },
+              "uniq_countries": 1,
+              "_id": "e92f79f8-4b4a-4ab7-9fb4-776236d28f6e",
+              "result": "https://urlscan.io/api/v1/result/e92f79f8-4b4a-4ab7-9fb4-776236d28f6e"
+            }
+          ],
+          "total": 961964
+        }
+    http_version: 
+  recorded_at: Tue, 05 Mar 2019 22:49:26 GMT
+recorded_with: VCR 4.0.0
