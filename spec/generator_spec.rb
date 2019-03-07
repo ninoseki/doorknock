@@ -2,9 +2,7 @@
 
 RSpec.describe DoorKnock::Generator do
   subject {
-    DoorKnock::Generator.new(
-      ["http://example.com", "http://example.com/foo/bar"]
-    )
+    DoorKnock::Generator.new("http://example.com")
   }
 
   describe "#paths" do

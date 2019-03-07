@@ -7,21 +7,26 @@ module DoorKnock
     end
 
     def check(size = 100)
-      phishy_urls = Feed.phishy_urls(size)
-      generator = Generator.new(phishy_urls)
+      Feed.phishy_urls(size).each do |phishy_url|
+        generator = Generator.new phishy_url
+        generator.admin_panel_urls.each do |panel_url|
+          website = Website.new(panel_url)
+          next if marked?(website.url)
+          next unless website.ok? && website.panel?
 
-      generator.admin_panel_urls.map do |url|
-        Website.new url
-      end.each do |website|
-        next unless website.ok? && website.panel?
-
-        puts [
-          website.url,
-          website.title
-        ].join(",")
-
-        break
+          puts [website.url, website.title].join(",")
+          mark(website.url)
+          break
+        end
       end
+    end
+
+    def mark(url)
+      @memo[url] = true
+    end
+
+    def marked?(url)
+      @memo.fetch(url, false)
     end
 
     def self.check(size = 100)
