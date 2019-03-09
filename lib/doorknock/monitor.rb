@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "parallel"
+
 module DoorKnock
   class Monitor
     def initialize
@@ -7,7 +9,7 @@ module DoorKnock
     end
 
     def check(size = 100)
-      Feed.phishy_urls(size).each do |phishy_url|
+      Parallel.each(Feed.phishy_urls(size)) do |phishy_url|
         generator = Generator.new phishy_url
         generator.admin_panel_urls.each do |panel_url|
           website = Website.new(panel_url)
