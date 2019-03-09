@@ -6,8 +6,10 @@ RSpec.describe DoorKnock::Website do
   subject { DoorKnock::CLI }
 
   describe "#start" do
+    let(:input) { "http://#{host}:#{port}/" }
     before do
-      allow(DoorKnock::Feed).to receive(:phishy_urls).and_return(["http://#{host}:#{port}/"])
+      allow(DoorKnock::Feed).to receive(:phishy_urls).and_return([input])
+      allow(Parallel).to receive(:each).with([input]).and_yield(input)
     end
 
     it "should return true" do
