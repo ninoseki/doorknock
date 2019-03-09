@@ -14,12 +14,12 @@ A doorknocking tool targeting phishing admin panels.
 ## Usage
 
 ```bash
-$ doorknock
+% doorknock
 Commands:
   doorknock help [COMMAND]  # Describe available commands or one specific command
   doorknock knock           # knock phishing websites
 
-$ doorknock help knock
+% doorknock help knock
 Usage:
   doorknock knock
 
