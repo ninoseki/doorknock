@@ -14,6 +14,7 @@ RSpec.describe DoorKnock::Generator do
   describe "#admin_panel_urls" do
     it "should return an array" do
       expect(subject.admin_panel_urls).to be_an(Array)
+      expect(subject.admin_panel_urls.first).to eq("http://example.com/admin.php")
     end
   end
 end
