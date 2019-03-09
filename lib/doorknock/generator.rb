@@ -11,14 +11,21 @@ module DoorKnock
     end
 
     def base_url
-      "#{url.scheme}://#{url.host}:#{url.port}"
+      case [url.scheme, url.port]
+      when ["http", 80]
+        "#{url.scheme}://#{url.host}"
+      when ["https", 443]
+        "#{url.scheme}://#{url.host}"
+      else
+        "#{url.scheme}://#{url.host}:#{url.port}"
+      end
     end
 
     def second_last_url
       parts = url.path.split("/")
       parts.pop if parts.length > 2
 
-      "#{url.scheme}://#{url.host}:#{url.port}" + parts.join("/")
+      base_url + parts.join("/")
     end
 
     def admin_panel_urls
