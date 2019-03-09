@@ -5,32 +5,26 @@ require "uri"
 
 module DoorKnock
   class Generator
-    attr_reader :urls
-    def initialize(urls = [])
-      @urls = urls.map do |url|
-        URI(url)
-      end.compact
+    attr_reader :url
+    def initialize(url)
+      @url = URI(url)
     end
 
-    def base_urls
-      urls.map do |url|
-        "#{url.scheme}://#{url.host}:#{url.port}"
-      end
+    def base_url
+      "#{url.scheme}://#{url.host}:#{url.port}"
     end
 
-    def second_last_urls
-      urls.map do |url|
-        parts = url.path.split("/")
-        parts.pop if parts.length > 2
+    def second_last_url
+      parts = url.path.split("/")
+      parts.pop if parts.length > 2
 
-        "#{url.scheme}://#{url.host}:#{url.port}" + parts.join("/")
-      end
+      "#{url.scheme}://#{url.host}:#{url.port}" + parts.join("/")
     end
 
     def admin_panel_urls
-      (base_urls + second_last_urls).uniq.sort.map do |url|
+      [base_url, second_last_url].uniq.sort.map do |target_url|
         paths.map do |path|
-          "#{url}/#{path}"
+          "#{target_url}/#{path}"
         end
       end.flatten.sort
     end
