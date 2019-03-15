@@ -12,9 +12,17 @@ RSpec.describe DoorKnock::Website do
       allow(Parallel).to receive(:each).with([input]).and_yield(input)
     end
 
-    it "should return true" do
-      out = capture(:stdout) { subject.start %w(knock) }
-      expect(out.chomp).to eq("http://#{host}:#{port}/admin/,admin")
+    context "#crawl" do
+      it "should return true" do
+        out = capture(:stdout) { subject.start %w(crawl) }
+        expect(out.chomp).to eq("http://#{host}:#{port}/admin/,admin")
+      end
+    end
+    context "#knock" do
+      it "should return true" do
+        out = capture(:stdout) { subject.start(["knock", "http://#{host}:#{port}"]) }
+        expect(out.chomp).to eq("http://#{host}:#{port}/admin/,admin")
+      end
     end
   end
 end

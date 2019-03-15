@@ -16,18 +16,25 @@ A doorknocking tool targeting phishing admin panels.
 ```bash
 % doorknock
 Commands:
+  doorknock crawl           # crawl & knock phishing websites
   doorknock help [COMMAND]  # Describe available commands or one specific command
-  doorknock knock           # knock phishing websites
+  doorknock knock URL       # knock a given URLs
 
-% doorknock help knock
+% doorknock help crawl
 Usage:
-  doorknock knock
+  doorknock crawl
 
 Options:
   [--size=N]  # Number of urlscan.io's search results to check. (Max: 10,000)
               # Default: 100
 
-knock phishing websites
+crawl & knock phishing websites
+
+% doorknock help knock
+Usage:
+  doorknock knock URL
+
+knock a given URL
 ```
 
 ## License
