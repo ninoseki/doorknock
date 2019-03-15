@@ -4,11 +4,16 @@ require "thor"
 
 module DoorKnock
   class CLI < Thor
-    desc "knock", "knock phishing websites"
+    desc "knock URL", "knock a given URL"
+    def knock(url)
+      Monitor.knock(url)
+    end
+
+    desc "crawl", "crawl & knock phishing websites"
     method_option :size, type: :numeric, default: 100, desc: "Number of urlscan.io's search results to check. (Max: 10,000)"
-    def knock
+    def crawl
       size = options.dig(:size) || 100
-      Monitor.check(size)
+      Monitor.crawl(size)
     end
   end
 end
